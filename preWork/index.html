@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Memory Game</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1 class="ml7">
+      <span class="text-wrapper">
+        <span class="letters">The Sound and Color Memory Game</span>
+      </span>
+    </h1>
+    <p>
+      Welcome to the Game!! Repeat Back the patterns by pressing buttons.
+    </p>
+    
+<!--     //Username Input -->
+      
+      <br>
+      <div class="username">
+        <input maxlength="15" id="userId" placeholder="Enter Username">
+        
+           <!--Buttons start and End -->
+        <button onclick="startGame()" id="startBtn" id="btn-12" class="hello">
+          <span>Submit</span>
+          <div class="success">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewbox="0 0 29.756 29.756" style="enable-background:new 0 0 29.756 29.756;" xml:space="preserve">
+	            <path d="M29.049,5.009L28.19,4.151c-0.943-0.945-2.488-0.945-3.434,0L10.172,18.737l-5.175-5.173   c-0.943-0.944-2.489-0.944-3.432,0.001l-0.858,0.857c-0.943,0.944-0.943,2.489,0,3.433l7.744,7.752   c0.944,0.943,2.489,0.943,3.433,0L29.049,8.442C29.991,7.498,29.991,5.953,29.049,5.009z"/>
+            </svg>
+            
+          </div>
+        </button>
+      <button id="stopBtn" class="hidden" onclick="stopGame()">
+        Stop
+      </button>
+      </div> 
+    
+    
+ 
+
+    
+    <div id="counter-div">
+      <h3 id="uname">
+        UserName
+      </h3>
+      <p id ="newuser">
+        New User
+      </p>
+      <p id="ulevel">
+        Level
+      </p>
+      <p id="counter">
+        0
+      </p>
+      
+    </div>
+    
+    <!-- Game Buttons -->
+    <div id="gameButtonArea" class="centerDiv">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button>      
+    </div>
+    
+    <div>
+      <h2>ScoreBoard</h2>
+
+      <table id="mytable" style="width:100%">
+        <tr>
+          <th>No.</th>
+          <th>Username</th>
+          <th>score</th>
+        </tr>
+ 
+      </table>
+    </div>
+ 
+    
+    
+  </body>
+</html>

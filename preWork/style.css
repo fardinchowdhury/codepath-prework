@@ -1,0 +1,253 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* adjust typography defaults */
+  body {
+    background-color: slategrey;
+    color: white; 
+    margin: 1rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  h1{
+    font-family: verdana, arial, sans-serif;
+    text-align: Center;
+  }
+  p{
+    text-align:center;
+  }
+  
+  #strtBtn{
+    text-align:center;
+  }
+  button{
+  padding: 15px;
+  border-radius: 90px;
+    
+  }
+  .hidden {
+    display: none;
+  }
+  
+  .centerDiv{
+    display: flex;
+  
+    width: 70%;
+    border: 5px solid black;
+    padding: 3%;
+    margin: 15%;
+    margin-top: 2%;
+    margin-bottom:auto;
+    
+  
+  }
+  #gameButtonArea > button {
+    width:200px;
+    height:200px;
+    margin:10px;
+    border: 5px solid black;
+    
+  }
+  
+  /* Button1 */
+  #button1{
+    background:Lightgreen;
+  }
+  #button1:active, #button1.lit {
+      background:green;
+  }
+  
+  /* Button2 */
+  #button2{
+    background:rosybrown;
+  }
+  #button2:active, #button2.lit {
+      background:red;
+  }
+  
+  /* Button3 */
+  #button3{
+    background:lightblue;
+  }
+  #button3:active, #button3.lit {
+      background:blue;
+  }
+  
+  /* Button4 */
+  #button4{
+    background:lightyellow;
+  }
+  #button4:active, #button4.lit {
+      background:yellow;
+  }
+  
+  /* Button5 */
+  #button5{
+    background:#D0AAF3;
+  }
+  #button5:active, #button5.lit {
+      background:#8A2BE2;
+  
+  }
+  
+  /* Button6 */
+  #button6{
+    background:MintCream;
+  }
+  #button6:active, #button6.lit {
+      background:#000099;
+  }
+  
+  .ml7 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.7em;
+  }
+  .ml7 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  .ml7 .letter {
+    transform-origin: 0 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+  /* // play button */
+  
+  particle {
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+  }
+  .button {
+    padding: 20px;
+    border-radius:15px;
+    margin:10;
+    
+  }
+  
+  
+  /* button For Username */
+  
+  
+  .hello{
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+  /*   top: 50%;
+    left: 50%; */
+    
+    margin-bottom: 90px;
+    
+  /*   width: 170px;
+    height: 40px; */
+    line-height: 1;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 3px solid #8C82FC;
+    background: #ffffff;
+    color: #8C82FC;
+    border-radius: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .35s;
+  }
+  
+  .hello:hover{
+    background: #8C82FC;
+    color: #ffffff;
+  }
+  
+  .hello span{
+    opacity: 1;
+    visibility: visible;
+    transition: all .35s;
+  }
+  
+  .success{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+  /*   border-radius: 50%; */
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .35s;
+  }
+  
+  .success svg{
+    width: 20px;
+    height: 20px;
+    fill: yellowgreen;
+    transform-origin: 50% 50%;
+  /*   transform: translateY(-50%) rotate(0deg) scale(0); */
+    transition: all .35s;
+  }
+  
+  .hello.is_active{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .hello.is_active .success{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .hello.is_active .success svg{
+    margin-top: 50%;
+  /*   transform: translateY(-50%) rotate(720deg) scale(1); */
+  }
+  
+  .hello.is_active span{
+    opacity: 0;
+    visibility: hidden;
+  }
+  .username{
+    text-align:center;
+  }
+  #userId{
+    border: 5px solid #6c6bff;
+    border-radius: 4px;
+    padding:18px;
+  }
+  .cell-highlight {
+    color: black;
+    text-align: center;
+    background-color: yellow;
+    font-weight: bold;
+  }
+  #uname{
+    text-align: center;
+    color:black;
+  }
+  #ulevel{
+    font-size: 20px;
+    color: black;
+    font-weight:bold;
+    
+  }
+  table, th, td {
+    border:1px solid black;
+    text-align:center;
+  }
